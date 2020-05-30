@@ -714,7 +714,7 @@ static void xpad360_process_packet(struct usb_xpad *xpad, struct input_dev *dev,
 		input_report_key(dev, BTN_TRIGGER_HAPPY4, data[2] & 0x02);
 	}
 
-	/*
+	/* 
 	 * This should be a simple else block. However historically
 	 * xbox360w has mapped DPAD to buttons while xbox360 did not. This
 	 * made no sense, but now we can not just switch back and have to
